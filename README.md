@@ -1,5 +1,5 @@
 # Converter
-  A simple converter of the coins
+  A simple converter of the coins and length
 # JOB DESCRIPTION:
   Develop a currency and unit length converter that follows the following operating phases:
   1. Initially, the system should allow the choice between currency converter and units of length;
