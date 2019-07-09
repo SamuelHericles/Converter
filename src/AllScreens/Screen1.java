@@ -1,15 +1,14 @@
 
 /*
-DISCIPLINA: TECNICAS DE PROGRAMACAO
+DISCIPLINE: PROGRAMMING TECHNIQUES
 Name: SAMUEL HERICLES SOUZA SILVEIRA
-EMAIL: samuel.hericles@outlook.com
+e-mail: samuel.hericles@outlook.com
 */
 
 package AllScreens;
 
 import java.awt.Color;
 import java.awt.Container;  
-//import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -25,7 +24,7 @@ public class Screen1 extends JFrame implements ActionListener{
 
 public Screen1(){
         
-//====FOMATACAO DA JANELA====  
+//====window formatting====  
 
         JFrame Screen1 = new JFrame();
         Container c = getContentPane();
@@ -36,7 +35,7 @@ public Screen1(){
         
          
         
-//====FOMATACAO DOS BOTOES====         
+//====buttons formatiing====         
         
         bt1 = new JButton("Moedas");
         bt1.addActionListener(this);
@@ -75,35 +74,35 @@ public Screen1(){
         setSize(305,150);
         setVisible(true); 
         
-    }//====FIM DA FOMATACAO====
+    }//====end formatting====
     
-//====ACPOES====    
+//====actions====    
 
 @Override
 public void actionPerformed(ActionEvent e) {
         
-//====MOEDAS===        
+//====coins===        
         if(e.getSource() == bt1){
             new Screen2();
             setVisible(false);
         }
         
-//====MEDIDAS====
+//====meters====
         if(e.getSource() == bt2){
                 new Screen3();
                 setVisible(false);
         }
         
-//====SAIR====
+//====exit====
         if(e.getSource() == bt3){
             setVisible(false);
             dispose();
             System.exit(0);
         }
         
-    }//====FIM DAS AÇÕES====
+    }//====end the actions====
     
 public static void main(String[] args)throws IOException{
         new Screen1();    
     }
-}//====FIM DA TELA PRINCIPAL====
+}//====end the main screen====

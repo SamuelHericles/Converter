@@ -20,7 +20,7 @@ public class Screen3 extends JFrame implements ActionListener{
     
 public Screen3(){
         
-//====FOMATACAO DA JANELA====  
+//====Window formatting====  
 
         g.setLayout(null);
         setTitle("Escolha o tipo de conversão:");
@@ -36,12 +36,12 @@ public Screen3(){
         g.add(label2);
         g.add(label1);
         
-//====FOMATACAO DO LABEL====
+//====Label formatting====
 
         label.setBounds(75,225,190,100);  
         g.add(label);
         
-//====FOMATACAO DOS BOTOES====
+//====Buttons formatting====
 
         bt11 = new JButton("Quilômetro(Km)");
         bt11.addActionListener(this);
@@ -114,7 +114,7 @@ public Screen3(){
         bt17.setEnabled(true);
         g.add(bt17);
         
-//====PARA====
+//====To stop====
         bt19 = new JButton("Para quilômetro(Km)");
         bt19.addActionListener(this);
         bt19.setSize(150,25);
@@ -195,14 +195,14 @@ public Screen3(){
         bt18.setEnabled(true);
         g.add(bt18);
 
-    }//====FIM DA FOMATACAO
+    }//====End formatting
     
-//====ACOES====
+//====Actions====
 
 @Override
 public void actionPerformed(ActionEvent e) {
         
-//===ENTRADA====
+//===Inputs====
     if(e.getSource() == bt11){
         try{
         n1=Double.parseDouble(JOptionPane.showInputDialog("Digite o compirmento em quilômetros(km): "));
@@ -278,7 +278,7 @@ public void actionPerformed(ActionEvent e) {
             label.setText("O que foi digitado: "+String.valueOf(n1)+" polegadas"); 
         n1/=39.3701;
     }
-//====CONVERSOES====
+//====Conversions====
     if(e.getSource() == bt19){
         JOptionPane.showMessageDialog(null," "+n1/1000+" Km");        
     }
@@ -300,12 +300,12 @@ public void actionPerformed(ActionEvent e) {
     if(e.getSource() == bt25){
         JOptionPane.showMessageDialog(null," "+n1*39.371+" in");
     }
-//====VOLTAR====
+//====To back====
     if(e.getSource() == bt18){
         setVisible(false);
         new Screen1();
     }
     
-  }//====FIM DAS ACOES====
+  }//====End the actions====
     
-}//====FIM DA TELA DE CONVERSOES DE MEDIDAS====
+}//==== END OF MEASUREMENT CONVERSION SCREEN ====

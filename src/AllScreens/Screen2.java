@@ -18,7 +18,7 @@ public class Screen2 extends JFrame implements ActionListener{
    
 public Screen2(){
        
- //====FOMATACAO DA JANELA====   
+ //====window formatting====   
  
         JFrame Screen2 = new JFrame();
         Container d = getContentPane();
@@ -33,7 +33,7 @@ public Screen2(){
         label.setBounds(5,-30, 250, 100);
         d.add(label);
    
- //====FOMATACAO DOS BOTOES====      
+ //====buttons formatting====      
  
         bt4 = new JButton("Real->Dolar");
         bt4.addActionListener(this);
@@ -107,13 +107,13 @@ public Screen2(){
 
     }
    
-//====ACOES====
+//====actions====
    
 @Override
 public void actionPerformed(ActionEvent e){
 
 //REAL
-//====REAL PARA DOLAR====
+//====REAL to DOLAR====
         if(e.getSource() == bt4){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em reais R$"));
@@ -125,7 +125,7 @@ public void actionPerformed(ActionEvent e){
             setVisible(false);
             new Screen2();
         }
-//====REAL PARA EURO===
+//====REAL to EURO===
         if(e.getSource() == bt5){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em reais R$"));
@@ -139,7 +139,7 @@ public void actionPerformed(ActionEvent e){
         }
         
 //DOLAR
-//====DOLAR PARA REAL====
+//====DOLAR to REAL====
         if(e.getSource() == bt6){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em Dolares $"));
@@ -151,7 +151,7 @@ public void actionPerformed(ActionEvent e){
             setVisible(false);
             new Screen2();
         }
-//====DOLAR PARA EURO====
+//====DOLAR to EURO====
         if(e.getSource() == bt7){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em dolar $"));
@@ -165,7 +165,7 @@ public void actionPerformed(ActionEvent e){
         }
 
 //EURO
-//====EURO PARA REAL====
+//====EURO to REAL====
         if(e.getSource() == bt8){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em euro €"));
@@ -178,7 +178,7 @@ public void actionPerformed(ActionEvent e){
             new Screen2();
         }
 
-//====EURO PARA DOLAR====
+//====EURO to DOLAR====
         if(e.getSource() == bt9){
             try{
             num = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em euro €:"));
@@ -191,10 +191,10 @@ public void actionPerformed(ActionEvent e){
             new Screen2();
         }
         
-//====VOLTAR====
+//====to back====
         if(e.getSource() == bt10){
             setVisible(false);
             new Screen1();
         }//==FIM DAS AÇÕES====
     } 
-}//====FIM DA TELA DE CONVERSOES DE MOEDAS====
+}//====end the currency conversions screen ====
