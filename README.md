@@ -25,4 +25,4 @@
  + Samuel Hericles - samuel.hericles@outlook.com
 
 # State of project
-Is finalized, because we what we reach our mission, but you to want update or to utilize in some application, contact us.
+Is finalized, because we what we reach our mission, but you to want update or to utilize in some application, contact me.
